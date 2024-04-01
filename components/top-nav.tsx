@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import React, { useState } from 'react'
@@ -11,7 +10,7 @@ const TopNav = () => {
   return (
     <>
       <nav className=' hidden fixed inset-0 w-full h-20 md:flex justify-between items-center z-50 bg-slate-900 px-4 shadow-md shadow-slate-400'>
-        <Image src={"/vp.png"} alt="logo" width={60} height={60} className=' rounded-xl me-4 hover:cursor-pointer' />
+        <Image src="/vp.png" alt="logo" width={80} height={80} className=' w-fit h-full p-2 rounded-xl me-4 hover:cursor-pointer' />
         <div className=' flex justify-center items-center '>
           <Link href="#"><h1 className=' text-3xl font-bold text-teal-600 mx-12 hover:text-teal-500 transition-colors ease-in-out duration-300'>Home</h1></Link>
           <Link href="#about"><h1 className=' text-3xl font-bold text-teal-600 mx-12 hover:text-teal-500 transition-colors ease-in-out duration-300'>About</h1></Link>
