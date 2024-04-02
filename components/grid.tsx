@@ -4,7 +4,9 @@ import Image from 'next/image'
 
 const Grid = () => {
     return (
-        <div className=' w-full h-fit bg-slate-100 bg-transparent mt-12 grid grid-cols-1 md:grid-cols-4 gap-10 p-10'>
+        <>
+        <h1 className=' text-slate-100 font-semibold text-3xl md:text-4xl text-left px-8 underline mt-4'>Tech-stack:</h1>
+        <div className=' w-full h-fit bg-slate-100 bg-transparent grid grid-cols-1 md:grid-cols-4 gap-10 p-10'>
             {
                 <>
                     <a href="https://tailwindcss.com" target='_blank'>
@@ -37,12 +39,12 @@ const Grid = () => {
                             <h1 className=' w-full text-slate-50 font-semibold text-xl md:text-3xl text-center'>AWS</h1>
                         </Box>
                     </a>
-                    <a href="https://react.dev/" target='_blank'>
+                    {/* <a href="https://react.dev/" target='_blank'>
                         <Box>
                             <Image src={"/javascript.png"} alt="logo" width={300} height={300} className=' w-2/5 h-3/5 p-5 rounded-xl bg-slate-950' />
                             <h1 className=' w-full text-slate-50 font-semibold text-xl md:text-3xl text-center'>JavaScript</h1>
                         </Box>
-                    </a>
+                    </a> */}
                     <a href="https://www.python.org" target='_blank'>
                         <Box>
                             <Image src={"/python.png"} alt="logo" width={300} height={300} className=' w-2/5 h-3/5 p-5 rounded-xl bg-slate-950' />
@@ -64,6 +66,7 @@ const Grid = () => {
                 </>
             }
         </div>
+        </>
     )
 }
 
