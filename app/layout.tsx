@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-800 scroll-smooth `}>{children}</body>
+      <body className={`${inter.className} bg-slate-800 scroll-smooth`} style={{maxWidth: '100vw', overflowX: 'hidden'}}>{children}</body>
     </html>
   );
 }

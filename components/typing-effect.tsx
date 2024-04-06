@@ -24,7 +24,7 @@ const TypingEffect = ({text, delay, className}: Props) => {
                setIndex(1)
                setValue(text[0])
             }
-        }, delay * 1000 * ((text.length - index) * delay * delay))
+        },  (delay * 1000 * ((text.length - index) * delay * delay)))
         return () => clearTimeout(timer)
     })
   return (
