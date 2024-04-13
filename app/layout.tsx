@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import TopNav from "@/components/top-nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-800 scroll-smooth`} style={{maxWidth: '100vw', overflowX: 'hidden'}}>{children}</body>
+      <body className={`${inter.className} bg-slate-200 scroll-smooth`} style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+        <TopNav />
+        {children}
+      </body>
     </html>
   );
 }

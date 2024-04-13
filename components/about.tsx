@@ -11,8 +11,8 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ delay:0.2}}
         >
-            <div className='  flex justify-center items-center md:mt-8 bg-slate-800 py-28 md:py-16 pt-20'>
-                <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-slate-100 '>
+            <div className='  flex justify-center items-center bg-slate-200 py-28 md:py-34 pt-20'>
+                <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-slate-900 '>
                     <motion.div
                         initial={{ opacity: 0, x:-100, y:-500, scale:12}}
                         whileInView={{ opacity: 1, x:0, y:0, scale:1}}
@@ -33,8 +33,8 @@ const About = () => {
                         transition={{ delay:1, duration: 0.8, }}
                         className=' flex flex-col justify-center items-center w-full'
                     >
-                    <div className=' flex justify-center items-center'>
-                        <Image src={"/bg.jpg"} alt="Image" width={800} height={800} className=' shadow-2xl shadow-slate-700 md:w-4/5 md:h-4/5 md:mt-20 rounded-3xl p-2' />
+                    <div className=' flex justify-center items-center p-4'>
+                        <Image src={"/bg2.jpg"} alt="Image" width={800} height={800} className=' shadow-md shadow-slate-700 md:w-4/6 md:h-6/6 md:mt-20' />
                     </div>
                     </motion.div>
                 </div>

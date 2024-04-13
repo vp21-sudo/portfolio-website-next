@@ -4,7 +4,6 @@ import AboutMe from "@/components/aboutme"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Grid from "@/components/grid"
-import TopNav from "@/components/top-nav"
 import { useEffect } from "react"
 
 const Page = () => {
@@ -16,7 +15,6 @@ const Page = () => {
   })
   return (
     <>
-    <TopNav/>
     <About/>
     <AboutMe/>
     <Grid/>

@@ -2,7 +2,6 @@
 import { headers } from "next/headers"
 import { Ratelimit } from "@upstash/ratelimit";
 import { kv } from '@vercel/kv'
-import { error } from "console";
 import sendEmail from "@/utils/email";
 const ratelimit = new Ratelimit({
     redis: kv,

@@ -29,7 +29,7 @@ const TypingEffect = ({text, delay, className}: Props) => {
     })
   return (
     <div className={className}>
-        {value}
+        {value}<span className=' animate-ping'>|</span>
     </div>
   )
 }

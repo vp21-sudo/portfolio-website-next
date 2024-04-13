@@ -10,9 +10,9 @@ const AboutMe = () => {
             viewport={{ once: true }}
             transition={{delay:0.5, duration: 0.3 }}
         >
-            <div className=' py-20 text-slate-50 flex flex-col justify-center items-center w-full h-full bg-teal-600' id='about'>
-                <h1 className=' text-4xl md:text-5xl font-semibold my-8'>About me</h1>
-                <div className=' w-11/12 md:w-2/3 text-lg  md:text-3xl flex flex-col justify-center items-center gap-4'>
+            <div className=" py-20 text-slate-50 flex flex-col justify-center items-center w-full h-full bg-teal-600 bg-[url('/aboutme.jpg')] bg-cover bg-bottom  " id="about">
+                <h1 className=' text-4xl md:text-5xl font-semibold my-8 text-slate-50 p-2 rounded-md '>About me</h1>                
+                <div className=' w-11/12 md:w-4/6 px-2 md:px-12 py-4 rounded-xl text-lg font-medium  md:text-3xl flex flex-col justify-center items-center gap-4  backdrop-blur-3xl'>
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}

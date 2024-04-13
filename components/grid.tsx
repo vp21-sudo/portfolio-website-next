@@ -14,7 +14,7 @@ const Grid = () => {
         >
             <div className=' py-20 bg-slate-800'>
                 <h1 className=' text-slate-100 font-semibold text-3xl md:text-4xl text-left px-2 md:px-8 underline'>Tech Store:</h1>
-                <div className=' w-full h-fit bg-slate-100 bg-transparent grid grid-cols-2 md:grid-cols-4 gap-2 mt-8 md:mt-1 px-2  md:gap-10 md:p-10'>
+                <div className=' w-full h-fit bg-slate-100 bg-transparent grid grid-cols-2 md:grid-cols-4 gap-2 mt-8 md:mt-1 px-2  md:gap-28 md:p-10'>
                     {
                         <>
                             <a href="https://tailwindcss.com" target='_blank'>
