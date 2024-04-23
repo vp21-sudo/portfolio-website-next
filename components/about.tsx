@@ -1,24 +1,27 @@
 import Image from 'next/image'
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useRef, useState } from 'react'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import TypingEffect from './typing-effect'
 
 const About = () => {
+    const { scrollYProgress } = useScroll();
     return (
         <motion.div
+            className=" bg-[url('/earth.jpg')] bg-cover bg-no-repeat w-full h-full object-center"
             initial={{ opacity: 0, }}
             whileInView={{ opacity: 1}}
-            viewport={{ once: true }}
-            transition={{ delay:0.2}}
+            viewport={{ once:false }}
+            style={{translateY: -(scrollYProgress.get() * 100)}}
         >
-            <div className='  flex justify-center items-center bg-slate-200 py-28 md:py-34 pt-20'>
-                <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-slate-900 '>
+            <div className=' flex justify-center items-cente py-28 md:py-34 pt-20'>
+                <div className=' grid grid-cols-1 md:grid-cols-2 gap-2 w-full text-slate-50 '>
                     <motion.div
-                        initial={{ opacity: 0, x:-100, y:-500, scale:12}}
-                        whileInView={{ opacity: 1, x:0, y:0, scale:1}}
+                        initial={{ opacity: 0, x:50}}
+                        whileInView={{ opacity: 1, x:0}}
                         viewport={{ once: true }}
-                        transition={{ delay:1, duration: 1.2, }}
+                        transition={{ delay:0.8, duration: 1, ease:"easeIn"}}
                         className=' flex flex-col justify-center items-center w-full'
+                        style={{translateY: -(scrollYProgress.get() * 4000)}}
                     >
                     <div className=' flex flex-col justify-center items-center gap-2 mx-12 md:mx-28 w-full px-8 md:px-16'>
                         <h1 className=' w-full md:w-4/5 text-left text-6xl md:text-7xl font-semibold'>Hello,</h1>
@@ -27,11 +30,12 @@ const About = () => {
                     </div>
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, x:50}}
-                        whileInView={{ opacity: 1, x:-0}}
+                        initial={{ opacity: 0, x:-50}}
+                        whileInView={{ opacity: 1, x:0}}
                         viewport={{ once: true }}
-                        transition={{ delay:1, duration: 0.8, }}
+                        transition={{ delay:0.2, duration: 0.6, ease:"easeIn"}}
                         className=' flex flex-col justify-center items-center w-full'
+                        style={{translateY: -(scrollYProgress.get() * 4000)}}
                     >
                     <div className=' flex justify-center items-center p-4'>
                         <Image src={"/bg2.jpg"} alt="Image" width={800} height={800} className=' shadow-md shadow-slate-700 md:w-4/6 md:h-6/6 md:mt-20' />

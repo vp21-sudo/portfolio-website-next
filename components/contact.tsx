@@ -18,7 +18,7 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 2 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
         >
             <div className=' grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 w-full items-center py-20 bg-slate-100'>
                 <div className=' w-full px-8 h-4/5 md:p-4 md:ms-12 rounded-xl'>
