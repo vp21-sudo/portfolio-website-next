@@ -16,7 +16,7 @@ const TopNav = () => {
         <Image src="/logo.jpeg" alt="logo" width={80} height={80} className=' w-fit h-full p-2 rounded-full me-4 hover:cursor-pointer' />
         <div className=' flex justify-center items-center '>
           <Link href="/"><h1 className={` text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300 ${path === "/" && " bg-slate-300 text-slate-950"} `  }>Home</h1></Link>
-          <Link href="/projects"><h1 className=' text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300'>Projects</h1></Link>
+          <Link href="/projects"><h1 className={` text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300 ${path === "/projects" && " bg-slate-300 text-slate-950"} `}>Projects</h1></Link>
           <Link href="/blog"><h1 className=' text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300'>Blog</h1></Link>
           <Link href="https://github.com/vp21-sudo" target='_blank'><h1 className=' text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300'>Github<ArrowOutwardIcon fontSize='small' /></h1></Link>
         </div>
