@@ -4,6 +4,7 @@ import AboutMe from "@/components/aboutme"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Grid from "@/components/grid"
+import ProjectsList from "@/components/projects/project-grid"
 import { motion, useMotionValueEvent, useScroll } from "framer-motion"
 import { useState } from "react"
 const Page = () => {
@@ -23,6 +24,7 @@ const Page = () => {
       </div>
       <About />
       <AboutMe />
+      <ProjectsList/>
       <Grid />
       <Contact />
       <Footer />
