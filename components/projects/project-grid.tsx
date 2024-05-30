@@ -23,6 +23,8 @@ const ProjectsList = () => {
 
             <ProjectCard name='Mango' imgUrl='/mangoproj.png' description={` Mango is my open-source developer tool designed to streamline working with NoSQL databases like MongoDB. If you've ever found yourself wrestling with Mongoose or other JSON-based schemas, Mango is for you!  It uses the Monaco editor for code interactions and React Flow for intuitive visualizations, making it super easy to manage and understand your database schemas `} webiste='https://mango.sudovp.com' github='https://github.com/vp21-sudo/mango' techs={["Next JS", "Monaco Editor", "React Flow", "Dev Tool", "Vercel"]} />
 
+            <ProjectCard name='Task Trek' imgUrl='https://sthreepublicproject.s3.ap-south-1.amazonaws.com/1717089801021_task-trek.png' description={` Task Trek is an offline Flutter to-do app designed for seamless task management without the need for an internet connection. It offers a clean, intuitive interface for users to organize and track their tasks efficiently. Users can create, edit, and delete tasks, categorize them, and set reminders, all within the app. Task Trek's offline functionality ensures that users can access and manage their tasks anytime, anywhere, without worrying about connectivity issues. `} images='https://sthreepublicproject.s3.ap-south-1.amazonaws.com/1717089801021_task-trek.png' github='https://github.com/vp21-sudo/Task-Trek' techs={["Flutter", "Dart", "SQL-Lite", "Mobile Application Development"]} />
+
 
         </div>
     )
