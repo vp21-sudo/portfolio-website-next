@@ -13,7 +13,7 @@ const ProjectsList = () => {
         description={`This is my software engineering portfolio. I'm passionate about software engineering and love creating unique applications. I'm always up for using the latest technologies to build custom components. This website is still under construction, but I'm constantly adding new features. I'd love to hear your feedback and collaborate on new projects!`}
         webiste="/"
         github="https://github.com/vp21-sudo/portfolio-website-next"
-        techs={["Next JS", "react", "Redis", "Framer Motion", "Vercel"]}
+        techs={["Next JS", "react", "Redis", "GSAP", "Vercel"]}
       />
 
       <ProjectCard
