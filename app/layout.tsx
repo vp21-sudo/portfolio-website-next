@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/top-nav";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-200 scroll-smooth`} style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <body
+        className={`${inter.className} bg-slate-200 scroll-smooth`}
+        style={{ maxWidth: "100vw", overflowX: "hidden" }}
+      >
         <TopNav />
         {children}
+        <Footer />
       </body>
     </html>
   );
