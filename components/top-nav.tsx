@@ -37,9 +37,23 @@ const TopNav = () => {
             </h1>
           </Link>
           <Link href="https://github.com/vp21-sudo" target="_blank">
-            <h1 className=" text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300">
-              Github
-              <ArrowOutwardIcon fontSize="small" />
+            <h1 className=" flex  text-2xl font-bold text-slate-400 mx-2 px-2 py-2 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300">
+              <Image
+                src={"/github-icon.svg"}
+                alt="github"
+                width={30}
+                height={30}
+              />
+            </h1>
+          </Link>
+          <Link href="https://www.linkedin.com/in/sudovp" target="_blank">
+            <h1 className=" flex  text-2xl font-bold text-slate-400 mx-2 px-2 py-2 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300">
+              <Image
+                src={"/linkedin-icon.png"}
+                alt="Linkedin"
+                width={30}
+                height={30}
+              />
             </h1>
           </Link>
         </div>
@@ -92,16 +106,24 @@ const TopNav = () => {
               Blog
             </h1>
           </Link>
-          <Link
-            href="https://github.com/vp21-sudo"
-            target="_blank"
-            onClick={(e) => {
-              settoggleMenu(false);
-            }}
-          >
-            <h1 className=" text-2xl font-bold text-slate-300 mx-4 px-8 py-2 hover:bg-slate-700 rounded-lg hover:text-slate-300 transition-colors ease-in-out duration-300">
-              Github
-              <ArrowOutwardIcon fontSize="small" />
+          <Link href="https://github.com/vp21-sudo" target="_blank">
+            <h1 className=" flex  text-2xl font-bold text-slate-400 mx-2 px-2 py-2 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300">
+              <Image
+                src={"/github-icon.svg"}
+                alt="github"
+                width={30}
+                height={30}
+              />
+            </h1>
+          </Link>
+          <Link href="https://www.linkedin.com/in/sudovp" target="_blank">
+            <h1 className=" flex  text-2xl font-bold text-slate-400 mx-2 px-2 py-2 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300">
+              <Image
+                src={"/linkedin-icon.png"}
+                alt="Linkedin"
+                width={30}
+                height={30}
+              />
             </h1>
           </Link>
         </div>
