@@ -59,7 +59,7 @@ const Page = () => {
             alt="blog"
             width={800}
             height={800}
-            className="  md:float-right w-full md:w-[45rem] md:h-[45-rem] mx-8 bg-slate-700 object-cover rounded-xl"
+            className="  md:float-right w-full md:w-[45rem] md:h-[45-rem] md:mx-8 bg-slate-700 object-cover rounded-xl"
           />
 
           <h1 className=" w-full md:w-fit  px-4 py-4 text-3xl md:text-4xl font-semibold text-center flex justify-center items-start md:mt-12">
