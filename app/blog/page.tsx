@@ -1,5 +1,6 @@
 "use client";
 import BlogBox from "@/components/blog-container";
+import Footer from "@/components/footer";
 import { useToast } from "@/components/ui/use-toast";
 import { sendRequest } from "@/utils/api";
 import { AxiosError } from "axios";
@@ -43,13 +44,20 @@ const Page = () => {
           <h1 className=" text-5xl font-semibold md:col-span-3">Blogs</h1>
           {blogs.payload.map(
             (
-              data: { title: string; content: string; handle: string },
+              data: {
+                title: string;
+                content: string;
+                handle: string;
+                createdAt: string;
+              },
               index,
             ) => (
               <BlogBox
                 title={data.title}
+                handle={data.handle}
                 content={data.content}
                 image={data.handle}
+                createdAt={data.createdAt}
                 key={index}
                 index={index}
               />
@@ -57,6 +65,7 @@ const Page = () => {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

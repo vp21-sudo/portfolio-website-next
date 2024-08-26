@@ -27,12 +27,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} bg-slate-200 scroll-smooth`}
+        className={`${inter.className} bg-slate-200 scroll-smooth `}
         style={{ maxWidth: "100vw", overflowX: "hidden" }}
       >
         <TopNav />
         {children}
-        <Footer />
         <Toaster />
       </body>
     </html>
