@@ -2,8 +2,8 @@
 
 import axios, { AxiosError } from "axios";
 
-const baseURL = "http://localhost:12000"; //local
-// const baseURL = "https://portfolio.spendings.in"; //prod
+// const baseURL = "http://localhost:12000"; //local
+const baseURL = "https://portfolio.spendings.in"; //prod
 
 const sendRequest = async (
   endpoint: string,
