@@ -13,7 +13,6 @@ const Page = () => {
       <ProjectsList />
       <Grid />
       <Contact />
-      <Footer />
     </>
   );
 };

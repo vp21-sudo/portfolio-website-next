@@ -31,7 +31,7 @@ const TopNav = () => {
           </Link>
           <Link href="/blog">
             <h1
-              className={`text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300 ${path === "/blog" && " bg-slate-300 text-slate-950"}`}
+              className={`text-2xl font-bold text-slate-400 mx-4 px-8 py-2 hover:bg-slate-200 rounded-lg hover:text-slate-900 transition-colors ease-in-out duration-300 ${path.split("/")[1] === "blog" && " bg-slate-300 text-slate-950"}`}
             >
               Blog
             </h1>
@@ -101,7 +101,7 @@ const TopNav = () => {
             }}
           >
             <h1
-              className={` text-2xl font-bold text-slate-300 mx-4 px-8 py-2 hover:bg-slate-700 rounded-lg hover:text-slate-300 transition-colors ease-in-out duration-300 ${path === "/blog" && " bg-slate-700 text-slate-100"} `}
+              className={` text-2xl font-bold text-slate-300 mx-4 px-8 py-2 hover:bg-slate-700 rounded-lg hover:text-slate-300 transition-colors ease-in-out duration-300 ${path.split("/")[1] === "blog" && " bg-slate-700 text-slate-100"} `}
             >
               Blog
             </h1>

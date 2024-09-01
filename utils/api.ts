@@ -32,7 +32,6 @@ const sendRequest = async (
 
     return response.data;
   } catch (error) {
-    console.log(error);
     if (error instanceof AxiosError) {
       if (error.status === 401) {
         localStorage.removeItem("authToken");
